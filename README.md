@@ -5,7 +5,7 @@ This is a fresh installation of Laravel that comes with Kompo prebuilt and Vue.j
 To start coding, simply run: 
 
 ```
-composer create-project --prefer-dist kompo/laravel-vue-starter **blog**
+composer create-project --prefer-dist kompo/laravel-vue-starter {blog}
 ```
 
-Replace **blog** with your desired folder name.
+Replace **{blog}** with your desired ROOT folder name.
