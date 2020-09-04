@@ -1,10 +1,11 @@
 {
-    "name": "laravel/laravel",
+    "name": "kompo/laravel-vue-starter",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "A Kompo pre-installed development environment with Laravel & Vue.js",
     "keywords": [
-        "framework",
-        "laravel"
+        "kompo",
+        "laravel",
+        "vue.js"
     ],
     "license": "MIT",
     "require": {
