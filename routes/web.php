@@ -1,18 +1,16 @@
 <?php
 
+use App\Http\Komposers\KompoDemoForm;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+// 1- Kompo rendered in view
+Route::view('/', 'welcome');
 
-Route::get('/', function () {
-    return view('welcome');
+// 2- Direct Route Call - rendered in a predefined layout
+Route::layout('layouts.app')->group(function(){
+	Route::get('kompo-in-layout', KompoDemoForm::class);
+
 });
+
+// 3- Direct Route Call - returned as JSON after AJAX call
+Route::get('kompo-as-json', KompoDemoForm::class);
